@@ -1,0 +1,20 @@
+@font-face { font-family: 'sans-bold';
+    src: url(Font/OpenSans-Bold.ttf);}
+@font-face {font-family: 'sans-regular';
+    src: url(Font/OpenSans-Regular.ttf);}
+@font-face {font-family: 'sans-semibold';
+    src: url(Font/OpenSans-SemiBold.ttf);}
+@font-face {font-family: 'poppins-bold';
+    src: url(Font/Poppins-Bold.ttf);}
+@font-face {font-family: 'poppins-regular';
+    src: url(Font/Poppins-Regular.ttf);}
+@font-face {font-family: 'poppins-semibold';
+    src: url(Font/Poppins-SemiBold.ttf);}
+@font-face {font-family: 'roboto-bold';
+    src: url(Font/Roboto-Bold.ttf);}
+@font-face {font-family: 'roboto-medium';
+    src: url(Font/Roboto-Medium.ttf);}
+@font-face {font-family: 'roboto-regular';
+    src: url(Font/Roboto-Regular.ttf);}
+@font-face {font-family: 'roboto-semibold';
+    src: url(Font/RobotoMono-SemiBold.ttf);}

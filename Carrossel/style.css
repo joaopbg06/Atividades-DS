@@ -1,0 +1,32 @@
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Efeito de transição */
+}
+
+.conteiner {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#carrosselImagem {
+    transition: 0.5s;
+    width: 1000px;
+    height: auto;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #1b1b1b;
+    background-color: rgb(179, 179, 179);
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}

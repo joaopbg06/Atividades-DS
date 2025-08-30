@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;}
+a{
+    text-decoration: none;}
+img{
+    width: 100%;
+    height: auto;}
+/* *** */
+:root{
+    --StarPequeno: 30px;
+    --StarPadrao: 64px;
+    --StarGrande: 200px;
+
+    --StarGrandeAltura: 210px;
+
+    --fontTitulo: 400 40px 'Opti-Regular',sans-serif;
+    --fontSubTitulo: 400 30px 'Decol-regular';
+    --fontTexto: 400 25px 'Opti-regular';
+
+    --fontTituloFooter: 400 30px 'Opti-Regular',sans-serif;
+    --fontSubTituloFooter: 400 20px 'Decol-regular';
+    --fontTextoFotter: 400 15px 'Opti-regular';
+
+    --amarelo: #F0E32E;
+    --roxoDiferente: #68519B;
+    --roxoEscuro: #661EAB;
+    --roxo1:#8F3DA3;
+    --roxo2: #FFA1F6;
+    --cinza: #D9D9D9;
+    --branco: #fff;
+    --preto: #000;
+
+    --fundoBrancoRoxo: linear-gradient(0deg, rgba(104, 42, 167, 0.65) -33.65%, rgba(255, 161, 246, 0.00) 138.46%);
+    --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
+    --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
+    --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);
+}
+@font-face {font-family: 'Opti-Regular' ;
+    src: url(Kaisei_Opti/KaiseiOpti-Regular.ttf);}
+@font-face {font-family: 'Decol-Regular' ;
+    src: url(Kaisei_Decol/KaiseiDecol-Regular.ttf);}
+/* *** */
+@keyframes orbita {
+    0%{
+        padding-top: 0;
+    }
+
+    50%{
+        padding-top: 10px;
+    }}
+@keyframes orbitaPlaneta {
+    0%{
+        padding-bottom: 0;
+    }
+    
+    50%{
+        padding-bottom: 5px;
+    }}
+/* *** */
+.fundo{
+    background-image: url(Fundo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;}
+.conteiner{
+    margin: 0 100px;}
+.star{
+    width: var(--StarPadrao);
+    height: 74px;}
+.starPequena{
+    width: var(--StarPequeno);}
+.lento{
+    animation: 10s orbita infinite;}
+.medio{
+    animation: infinite orbita 5s;}
+.rapido{
+    animation: infinite orbita 3s;}
+.conteiner{
+    display: flex;}
+#header .conteiner{
+    justify-content: space-around;
+    align-items: center;
+    position: relative;}
+#header .esquerda{
+    position: absolute;
+    top: 200px;
+    left: 120px;}
+#header .direita{
+    position: absolute;
+    top: 80%;
+    right: 40px;}
+#camera{
+    width: 640px;
+    border-radius: 15px;
+    margin: 20px;
+    border: 3px var(--amarelo) solid;}
+.apoioCamera{
+    width: 700px;
+    background-color: var(--roxo1);
+    margin-top: 50px;
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.btnFoto {
+    position: relative;
+    padding: 5px 35px;
+    background: var(--roxo1);
+    color: var(--branco);
+    border: 3px solid var(--roxo1);
+    border-radius: 8px;
+    box-shadow: 0 0 0 var(--roxoDiferente);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    font: var(--fontSubTituloFooter);
+    margin-bottom: 20px ;}
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);}
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);}
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);}
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);}
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);}
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;}
+.btnFoto:hover {
+    background: transparent;
+    color: var(--branco);
+    border: 3px solid var(--amarelo);
+    box-shadow: 0 0 25px var(--amarelo);}
+.btnFoto:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.btnFoto:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.btnFoto:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.btnFoto:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.btnFoto:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.btnFoto:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;}
+.fil0 {
+    fill: #FFFDEF}
+#header .direitaP{
+    position: absolute;
+    right: 2%;
+    top: 3%;}
+#header .esquerdaP{
+    position: absolute;
+    left: 1%;
+    top: 5%;}
+.divicao{
+    width: 100%;
+    height: 25px;
+    background-color: var(--roxo1);}
+.enquadramento{
+    width: 400px;
+    height: 700px;
+    background-color: var(--roxo1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 0;}
+#main .conteiner{
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px 0;}
+.direitaP{
+    position: absolute;
+    right: 2%;
+    top: 1%;}
+.esquerdaP{
+    position: absolute;
+    left: 1%;
+    top: 1%;}
+#foto{
+    height: 600px;
+    width: 300px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: 50%;
+    margin: 50px 20px 0;}
+.conteudo{
+    font: var(--fontTextoFotter);
+    color: var(--branco);
+    text-shadow: 1px 1px 5px var(--amarelo);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 50px 0;}
+.divicaoLinha{
+    width: 80%;
+    height: 1.7px;
+    border-radius: 5px;
+    background-color: var(--branco);}
+.saturno{
+    position: absolute;
+    bottom: -40px;
+    width: 100px;
+    z-index: -1;
+    opacity: 0.5;
+    animation: infinite orbitaPlaneta 6s;}
+.texto{
+    color: var(--branco);
+    font: var(--fontTextoFotter);}
+.titulo{
+    color: var(--branco);
+    font: var(--fontSubTitulo);
+    width: 100%;
+    text-align: center;}
+.cima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+#main,
+.divicao{
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: 3s all linear;}
+#header{
+    transition: 3s all linear;}
+#main{
+    background-image: url(Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;}

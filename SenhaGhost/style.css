@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;}
+img{
+    width: 100%;
+    height: auto;}
+a{
+    text-decoration: none;}
+/* *** */
+:root{
+    --fontTitulo: 500 40px 'Ghost-titulo';
+    --fontTexto: 500 20px 'Ghost';
+
+    --amarelo: #ABAF76;
+    --verdeFundo: #638174;
+    --vermelho: #793218;
+    --marrom: #83592A;
+    --preto: #060805;
+    --branco: #fff;
+}
+/* *** */
+@font-face {font-family: "Ghost";
+    src: url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.eot");
+    src: url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6de62301cbce6d09736bff46f2ae832f.svg#Ghostz")format("svg");}
+@font-face {font-family: 'Ghost-titulo' ;
+    src: url(font/cloister-black-font/CloisterBlackLight-axjg.ttf);}
+/* *** */
+#header{
+    width: 100vw;
+    height: 20vh;
+    color: var(--preto);}
+.fundo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.7;}
+#header .fundo{
+    background-color: var(--preto);}
+.conteiner{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 100%;}
+.titulo{
+    font: var(--fontTitulo);}
+.divicao{
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--preto);
+    margin: 0.5vh 0;
+    opacity: 0.7;}
+#main .fundo{
+    background-image: url(img/fundo.png);}
+.logo{
+    width: 250px;}
+#main{
+    height: 74vh;}
+.formulario{
+    background-color: var(--preto);
+    height: 40vh;
+    width: 40vw;
+    opacity: 0.8;
+    border-radius: 15px;}
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;}
+input{
+    outline: none;
+    background-color: transparent;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1.8px var(--amarelo) solid;
+    height: 25px;
+    padding: 0 5px ;
+    color: var(--branco);
+    width: 200px;}
+.mostrarSenha{
+    cursor: pointer;}
+.parteForm{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.textoForm{
+    font: var(--fontTexto);
+    color: var(--branco);}
+.btnSubmit{
+    background-color: transparent;
+    color: var(--branco);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1.8px transparent solid;
+    border-bottom: 1.8px var(--verdeFundo) solid;
+    width: 75px;
+    cursor: pointer;
+    transition: all 1s linear;}
+.btnSubmit:hover{
+    border-radius: 5px;
+    border: 1.8px var(--verdeFundo) solid;
+    color: var(--preto);
+    background-color: var(--verdeFundo);} 
+.requisitos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;}
+.feedback{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;}
+.vermelho{
+    color: var(--vermelho);
+    transition: color 1s;}
+.verde{
+    color: var(--verdeFundo);
+    transition: color 0.3s;}
+.textoPoder{
+    border-bottom: 1.8px var(--amarelo) solid;
+    padding: 0 5px;}
+.subDivicao{
+    width: 85%;
+    height: 1.8px;
+    background-color: var(--branco);
+    border-radius: 3px;}
+#medidorPoder {
+    margin-top: 10px;
+    height: 20px;
+    width: 0;
+    background-color: gray;
+    transition: width 1s, background-color 1s;
+    border-radius: 5px;}
+.click{
+    transition: all 1s linear;}
+
+
+
+
+

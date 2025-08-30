@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/022be58334.js" crossorigin="anonymous"></script>
+
+    <title>Jokenpô</title>
+</head>
+<body>
+
+    <div id="principal">
+
+        <div id="conteudo">
+            <h1 id="titulo">Jokenp</h1>
+            <div id="musica">
+                <i class="fa-solid fa-music"></i>
+                <input type="range" id="controleVolume" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+
+        
+
+        <div id="placar">
+
+            <div id="jogador">
+                    <h2 id="jogadorNome">jogador</h2>
+                    <p id="jogadorPontos">0</p>
+                    <ul id="jogadorEscolha">
+                        <li>
+                            <a id="jogadorEscolha1" onclick="jogar(1)">
+                                <img class="pedra" src="img/pedra.png" alt="pedra">
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="jogar(2)" id="jogadorEscolha2">
+                                <img src="img/papel.png" alt="papel">
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="jogar(3)" id="jogadorEscolha3">
+                                <img src="img/tesoura.png" alt="tesoura">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div id="versus">VS</div>
+            
+            <div id="computador">
+                    <h2 id="computadorNome">Computador</h2>
+                    <p id="computadorPontos">0</p>
+                    <ul id="computadorEscolha">
+                        <li>
+                            <a id="computadorEscolha1">
+                                <img class="pedra" src="img/pedra.png" alt="pedra">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="computadorEscolha2">
+                                <img src="img/papel.png" alt="papel">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="computadorEscolha3">
+                                <img src="img/tesoura.png" alt="tesoura">
+                            </a>
+                        </li>
+                    </ul>
+                
+            </div>
+
+        </div>
+
+
+        <div id="mensagem">
+            &nbsp;
+        </div>
+    </div>
+
+    <audio id="musicaFundo" autoplay loop>
+        <source src="img/musicaFundo.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>

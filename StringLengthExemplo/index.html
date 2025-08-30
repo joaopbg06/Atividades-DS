@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <textarea placeholder="Escreva há vontade" name="" id="comentario"></textarea>
+    <button onclick="mostrarLetras()">Enviar</button>
+    <p id="caracteres"></p>
+
+    <script>
+
+        function mostrarLetras() {
+            let comentario = document.getElementById("comentario").value;
+            let numeroLetras = comentario.length;
+            let texto = document.getElementById('caracteres')
+
+            texto.innerHTML = numeroLetras + " caracteres"
+
+        }
+
+    </script>
+
+</body>
+
+</html>

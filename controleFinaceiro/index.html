@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+
+    <script src="https://kit.fontawesome.com/022be58334.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="fundo"></div>
+        <div class="conteudo">
+            <h1 class="titulo">Bem Vindo</h1>
+
+            <div class="divisaoTexto"></div>
+
+            <p class="subtitulo">Esse é seu controle financeiro</p>
+        </div>
+    </header>
+
+    <main id="main" >
+        
+        <div class="conteiner">
+
+            <div class="resumo">
+                <div>
+                    <span class="texto">Entradas: R$</span>
+                    <span class="entradas">0.00</span>
+                </div>
+
+                <div class="divisaoVertical"></div>
+
+                <div>
+                    <span class="texto">Saídas: R$</span>
+                    <span class="saidas">0.00</span>
+                </div>
+
+                <div class="divisaoVertical"></div>
+
+                <div>
+                    <span class="texto">Total: R$</span>
+                    <span class="total">0.00</span>
+                </div>
+                
+            </div>
+
+            <div class="divisaoTotalHorisontal"></div>
+
+            <div class="novoItem">
+
+                <div class="novoItemIn">
+
+                    <div class="divDesc Infor">
+                        <label for="desc">Descrição</label>
+                        <input placeholder="Insira aqui" type="text" id="desc">
+                    </div>
+
+                    <div class="divisaoVertical"></div>
+
+                    <div class="divValor Infor">
+                        <label for="valor">Valor</label>
+                        <input placeholder="Insira aqui" type="number" id="valor" />
+                    </div>
+
+                    <div class="divisaoVertical"></div>
+
+                    <div class="divTipo Infor">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo">
+                            <option>Entrada</option>
+                            <option>Saída</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button id="btnNovo">
+                    <span class="textoHover">Incluir</span>
+                    <i class="imagemHover fa-sharp fa-regular fa-circle-check fa-beat"></i>                </button>
+            
+            </div>
+
+            <div class="divTabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th class="columnValor">Valor</th>
+                            <th class="columnTipo">Tipo</th>
+                            <th class="columnAcao"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </main >
+
+    <script src="main.js"></script>
+</body>
+</html>

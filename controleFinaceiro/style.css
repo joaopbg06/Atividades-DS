@@ -1,0 +1,167 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+img{
+    width: 100%;
+    height: auto;}
+a{
+    text-decoration: none;}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;}
+/* *** */
+@font-face {font-family: 'GravityFalls';
+    src: url(font/gravity-falls/gravitation_falls.otf);}
+@font-face {font-family: 'osd_mono' ;
+    src: url(font/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);}
+/* *** */
+:root{
+    --fontTitulo: 300 40px 'GravityFalls';
+    --fontSubTitulo: 300 25px 'osd_mono';
+    --fontTexto: 200 20px 'osd_mono';
+    --fontInput: 200 15px 'osd_mono';
+    --fontBtn: 200 17px 'GravityFalls';}
+/* *** */
+.texto,
+.entradas,
+.saidas,
+.total{
+    font: var(--fontTexto);}
+.titulo{
+    font: var(--fontTitulo);}
+.subtitulo{
+    font: var(--fontSubTitulo);}
+#header .conteudo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 25px 0  50px;
+    background-color: #000;
+    opacity: 0.6;
+    color: #fff;
+    padding: 15px 0;}
+.fundo{
+    height: 130px;
+    background-image: url(img/fundoBill.png);
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    background-size: 106%;
+    opacity: 0.6;
+    border: 10px #000 solid;}
+.divisaoTexto{
+    width: 350px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 3px;
+    margin: 10px 0 5px;}
+#main{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.6;
+    padding-top: 35px;}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 50vw;}
+.resumo,
+.novoItemIn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    font: var(--fontTexto);}
+.divisaoVertical{
+    height: 60px;
+    width: 3px;
+    background-color: #fff;
+    border-radius: 3px;}
+.divisaoTotalHorisontal{
+    width: 90%;
+    height: 4px;
+    background-color: #fff;
+    margin: 50px 0;}
+.Infor{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    text-align: center; 
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;}
+.Infor input{
+    outline: none;
+    border-bottom: #000 2px solid;
+    width: 10vw;
+    padding: 0 5px 2px;
+    font: var(--fontInput);}
+#tipo{
+    outline: none;
+    border: none;
+    width: 10vw;
+    text-align: center;
+    font: var(--fontInput);}
+#btnNovo{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    font: var(--fontBtn);
+    margin-top: 60px;
+    padding: 0 5px;
+    cursor: pointer;
+    border-bottom: #fff 2px solid;
+    position: relative;
+    overflow: hidden;
+    color: #fff;}
+.novoItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;}
+.textoHover{
+    z-index: 2;
+    transition: opacity 0.6s ease;}
+.imagemHover{
+    position: absolute;
+    opacity: 0;
+    left: 40px;
+    bottom: 5px;
+    transition: opacity 0.6s ease;
+    color: #fff;}
+#btnNovo:hover .textoHover {
+    opacity: 0;}
+#btnNovo:hover .imagemHover {
+    opacity: 1;}
+th{
+    font: var(--fontBtn);
+    text-align: left;}
+.divTabela,
+table{
+    width: 90%;}
+tbody{
+    font: var(--fontTexto);}
+td{
+    padding: 5px 10px;}
+#animation{
+    cursor: pointer;
+    height: 0px}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(img/fundoRotativo.png);
+    background-size: cover;}
+
+

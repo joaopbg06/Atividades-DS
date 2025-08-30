@@ -1,0 +1,9 @@
+{
+    "titulo1": "Site Multi-Lang",
+
+    "titulo2": "Usar archivos JSON para cambiar el idioma de un sitio web es una solución práctica y eficiente. Estos archivos funcionan como repositorios de textos traducidos, organizados en pares de clave-valor. Cada clave representa un elemento del sitio web, como un botón o un título, y el valor contiene la traducción correspondiente en el idioma seleccionado. Por ejemplo, un archivo puede contener textos en portugués y otro en inglés, lo que facilita cambiar de idioma sin duplicar páginas ni complicar el código.",
+
+    "titulo3": "El sistema funciona cargando el archivo JSON del idioma seleccionado, generalmente determinado por la configuración del navegador del usuario o una elección manual en el sitio web. Esto actualiza automáticamente el contenido del sitio con los textos adecuados. Este enfoque hace que el proceso sea rápido y evita recargar toda la página, mejorando la experiencia del usuario.",
+    
+    "titulo4": "Además, esta técnica facilita agregar nuevos idiomas al sitio web. Solo necesitas crear un nuevo archivo JSON con las traducciones necesarias sin modificar el resto del sitio. Esto simplifica el mantenimiento y permite que desarrolladores y traductores trabajen por separado, acelerando el proceso y manteniendo el sitio organizado."
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Lang</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        text,
+        div {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace, 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+        }
+
+        #header {
+            width: 100vw;
+            height: 60px;
+            padding: 0 200px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background-color: rgb(0, 0, 0, 0.5);
+            position: relative;
+            color: white;
+        }
+
+        .logo {
+            font-size: 20px;
+        }
+
+        #nav {
+            display: flex;
+            position: absolute;
+            right: 200px;
+        }
+
+        .buttonMudar {
+            margin: 0 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .buttonMudar:hover {
+            text-decoration: underline;
+        }
+
+        #main {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 100px 0;
+        }
+
+        .paragrafo {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .conteiner {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gif{
+            width: 20%;
+            position: absolute;
+            bottom: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="conteudo texto1" ></div>
+    <div class="conteudo texto2" ></div>
+    <div class="conteudo texto3" ></div>
+
+    <div id="idiomas">
+        <button onclick="escolher('en')">Inglês</button>
+        <button onclick="escolher('ptbr')">Português</button>
+        <button onclick="escolher('es')">Espanhol</button>
+    </div> -->
+
+
+    <header id="header">
+        <div class="logo">
+            <text class="texto1"></text>
+        </div>
+
+        <nav id="nav">
+            <div class="buttonMudar" onclick="escolher('en')">Inglês</div>
+            <div class="buttonMudar" onclick="escolher('ptbr')">Português</div>
+            <div class="buttonMudar" onclick="escolher('es')">Espanhol</div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <div class="conteiner">
+            <text class="texto2 paragrafo"></text>
+            <text class="texto3 paragrafo"></text>
+            <text class="texto4 paragrafo"></text>
+        </div>
+
+
+    </main>
+
+   
+
+    <script>
+
+        // function escolher(idioma){
+        //     fetch(`textos_${idioma}.json`)
+        //         .then(resposta => resposta.json())
+        //         .then(texto => {
+        //             document.getElementById('paragrafo1').innerHTML = texto.paragrafo1;
+        //             document.getElementById('paragrafo2').innerHTML = texto.paragrafo2;
+        //             document.getElementById('paragrafo3').innerHTML = texto.paragrafo3;
+        //         })
+        //         .catch(error => console.error('Erro buscando textos: ', error));
+        // }
+
+        function escolher(idioma) {
+            fetch(`textos_${idioma}.json`)
+                .then(resposta => resposta.json())
+                .then(texto => {
+
+                    for (let i = 1; i < 40; i++) {
+                        document.querySelector(`.texto${i}`).textContent = texto[`titulo${i}`]
+                    }
+
+                })
+                .catch(error => console.error('Erro buscando textos: ', error));
+        }
+        escolher('ptbr')
+
+        escolher("ptbr")
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *** */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1545063168-0e149bddf68c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font: 600 35px arial, sans-serif;
+    text-align: center;
+    margin: 25px 0 2px;
+}
+
+h2 {
+    font: 600 20px arial, sans-serif;
+}
+
+text,
+div {
+    font-family: 15;
+}
+
+.colunas {
+    display: flex;
+    margin-top: 50px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    border-bottom: 1.7px #000 solid;
+    width: 10vw;
+    opacity: 0.8;
+    background-color: #d5d5d5;
+    font-size: 16px;
+    padding: 0 5px 2px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    margin: 15px;
+    width: 5vw;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.coluna {
+    background-color: #d5d5d5;
+    width: 15vw;
+    text-align: center;
+    padding: 15px 0 25px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+li {
+    list-style: none;
+    background-color: #c2c2c2;
+    opacity: 0.8;
+    border-radius: 5px;
+    width: 10vw;
+    padding: 4px 0;
+    margin-top: 5px;
+}
+
+
+.tarefas {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 100vw;
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    opacity: 0.8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+    background-color: #d5d5d5;
+    width: 15vw;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+.linhaTexto {
+    border: #000 1.5px solid;
+    animation: titulo 10s infinite;
+    animation-fill-mode: forwards;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* animacao */
+@keyframes botao {
+
+    50% {
+        background-color: #c2c2c2;
+    }
+
+    75% {
+        background-color: #d5d5d5;
+    }
+
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+button:hover {
+    animation-name: botao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titulo {
+    0% {
+        width: 10vw;
+    }
+
+    50% {
+        width: 20vw;
+    }
+
+    100% {
+        width: 10vw;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+    opacity: 1;
+}

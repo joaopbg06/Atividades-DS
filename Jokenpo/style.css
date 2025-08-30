@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;}
+a{
+    text-decoration: none;}
+img{
+    width: 100%;
+    height: auto;}
+/* *** */
+@font-face {
+    font-family: 'mine';
+    src: url(minecraft/Minecraft.ttf);
+}
+/* *** */
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado{
+    opacity: 1;
+    transition: 0.3s;}
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;}
+/* *** */
+@keyframes moveBackground {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+#placar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+#jogadorEscolha,
+#computadorEscolha{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;}
+.pedra{
+    width: 200px;}
+#jogadorNome,
+#computadorNome{
+    font:200 35px 'mine', sans-serif;}
+#titulo{
+    font:250 40px 'mine', sans-serif;}
+li{
+    list-style-type: none;}
+#jogador,
+#computador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 700px;
+    padding: 15px 0 0;}
+#versus,
+#mensagem,
+#jogadorPontos,
+#computadorPontos,
+#reiniciar{
+    font:500 25px 'mine', sans-serif;   }
+#versus{
+    margin: 40px 0 50px;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    border: #000 0 solid;
+    opacity: 0.8;
+    z-index: 0;}
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fundo.png'); 
+    background-size: cover;
+    z-index: -1;
+    animation: moveBackground 75s linear infinite;}
+#mensagem{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;}
+#placar{
+    margin: 50px 0;
+    background-color: #fff;
+    width: 800px;
+    height: 800px;
+    border-radius: 5px;
+    padding: 20px 0;}
+#jogador{
+    border: rgb(133, 133, 255) 5px solid;
+    background-color: rgb(133, 133, 255);}
+#computador{
+    border: orange 5px solid;
+    background-color: orange;} 
+#reiniciar{
+    background-color: rgb(133, 133, 255);
+    color:#000;
+    width: 100%;
+    cursor: pointer;}
+#conteudo{
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+#controleVolume {
+    width: 100px;
+    margin: 20px auto;
+    appearance: none;
+    background: linear-gradient(to right, #ccc, #ccc) no-repeat center;
+    background-size: calc((var(--volume) - 0) * 100%) 100%;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background-size 0.2s;
+    margin: 0 10px;}
+#controleVolume::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;}
+
+
+
+
+

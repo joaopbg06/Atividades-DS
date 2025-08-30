@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo para natal</title>
+    <link rel="icon" href="img/mrBeastNatal.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/022be58334.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="fundo" class="body">
+        <div class="conteiner">
+            <div class="treno">
+                <img class="mrBeastPassar" src="img/mrBeastNatal.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Tempo restante para o natal</h1>
+                <h2 id="countdown"></h2>
+
+                <div id="barraProgresso">
+                    <div id="progresso"></div>
+                </div>
+
+            </div>
+            <div class="crescer">
+                <img class="mrBeastCrescer" src="img/mrBeastNatal.png" alt="">
+            </div>
+        </div>
+    </div>
+
+<script>
+
+const christmasDate = new Date('december 25, 2025 00:00:00').getTime();
+    
+    // Defina a data inicial dois meses antes do Natal
+    const startDate = new Date(christmasDate);
+    startDate.setMonth(startDate.getMonth() - 2);
+    
+    let progresso = 0;
+
+    const countdown = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = christmasDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerHTML  = `${days}d:${minutes}m:${seconds}s`
+        
+
+        // Calcule o progresso com base no intervalo de dois meses
+        const totalDays = (christmasDate - startDate.getTime()) / (1000 * 60 * 60 * 24);
+        const daysPassed = (now - startDate.getTime()) / (1000 * 60 * 60 * 24);
+        progresso = (daysPassed / totalDays) * 100;
+
+        document.getElementById('progresso').style.width = progresso + '%';
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById('countdown').innerHTML = 'Feliz Natal!';
+            natalFuncao()
+        }
+    }, 1000);
+
+    function natalFuncao(){
+        let fundo = document.querySelector('#fundo');
+        fundo.classList.add('now');
+        document.querySelector("#barraProgresso").style.display = 'none'}
+
+
+
+</script>
+
+</body>
+</html>

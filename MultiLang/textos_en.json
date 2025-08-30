@@ -1,0 +1,9 @@
+{
+    "titulo1": "Site Multi-Lang",
+
+    "titulo2": "Using JSON files to change a website's language is a practical and efficient solution. These files serve as repositories for translated texts, organized in key-value pairs. Each key represents an element of the website, such as a button or title, and the value contains the corresponding translation in the selected language. For example, one file may contain texts in Portuguese, and another in English, making it easy to switch languages without duplicating pages or complicating the code.",
+
+    "titulo3": "The system works by loading the JSON file of the selected language, typically determined by the user’s browser settings or a manual choice on the website. This automatically updates the website's content with the appropriate texts. This approach makes the process fast and avoids reloading the entire page, enhancing the user experience.",
+    
+    "titulo4": "Moreover, this technique simplifies adding new languages to the website. You only need to create a new JSON file with the necessary translations without modifying the rest of the site. This makes maintenance easier, allowing developers and translators to work separately, speeding up the process and keeping the site organized."
+}

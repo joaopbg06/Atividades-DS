@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SayMyNameSite</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(green, lightgreen);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            background-color: black;
+            color: #fff;
+            font: 300 2rem 'Roboto Mono', sans-serif;
+            padding: 0.7rem 1.5rem;
+            border-radius: 0.7rem;
+            /* transition: ease-in-out 0.3s; */
+            cursor: pointer;
+            margin: 0.5rem auto;
+        }
+
+        .titulo-principal {
+            font: 700 36px 'Roboto Mono';
+        }
+
+        .titulo {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 458px) {
+            .titulo-principal {
+                font-size: 28px;
+            }
+
+            .btn {
+                font-size: 20px;
+
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="titulo-principal">Say my name</h1>
+    </div>
+
+    <div class="botoes">
+        <div class="botao1">
+            <button class="btn" onclick="sim()">Haisenberg</button>
+        </div>
+        <div class="botao2">
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">Walter white</button>
+        </div>
+    </div>
+
+    <script>
+        function sim() {
+            location.href = "https://youtu.be/dy_DASt7hDs?t=13";
+        }
+
+        function desvia(btn) {
+            btn.style.position = "absolute";
+            btn.style.bottom = posicao(10, 50);
+            btn.style.left = posicao(10, 50);
+        }
+
+        function posicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+    </script>
+
+</body>
+
+</html>

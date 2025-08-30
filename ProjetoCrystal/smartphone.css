@@ -1,0 +1,25 @@
+.menu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #008374;
+    width: 100%;
+    height: 150px;
+}
+
+.menuBarra{
+    display: initial;
+}
+
+#icone{
+    color: #fff;
+   font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
