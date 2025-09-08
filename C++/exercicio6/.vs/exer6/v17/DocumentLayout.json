@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\exer6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7D475E-08BB-4FB3-8213-0A4767B45B3B}|exer6\\exer6.vcxproj|C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\exer6\\exer6\\exer6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD7D475E-08BB-4FB3-8213-0A4767B45B3B}|exer6\\exer6.vcxproj|solutionrelative:exer6\\exer6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A86CC1-D637-403D-9C4F-1F378B347336}|..\\VETOR\\VETOR\\VETOR.vcxproj|C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\VETOR\\VETOR\\VETOR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "exer6.cpp",
+              "DocumentMoniker": "C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\exer6\\exer6\\exer6.cpp",
+              "RelativeDocumentMoniker": "exer6\\exer6.cpp",
+              "ToolTip": "C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\exer6\\exer6\\exer6.cpp",
+              "RelativeToolTip": "exer6\\exer6.cpp",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAwHsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-10T18:16:38.862Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VETOR.cpp",
+              "DocumentMoniker": "C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\VETOR\\VETOR\\VETOR.cpp",
+              "RelativeDocumentMoniker": "..\\VETOR\\VETOR\\VETOR.cpp",
+              "ToolTip": "C:\\Users\\46492449860\\Desktop\\Geral\\projetinhos\\C\u002B\u002B\\VETOR\\VETOR\\VETOR.cpp",
+              "RelativeToolTip": "..\\VETOR\\VETOR\\VETOR.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-10T18:18:21.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
